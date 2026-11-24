@@ -1,0 +1,11 @@
+{
+  "selected_method": "rrf_ce",
+  "selection_rule": "max MRR@3 on dev among {bm25, rrf, rrf_ce}, tie-break by Recall@3, then simplicity",
+  "dev_metrics": {
+    "Hit@3": 0.8667,
+    "Recall@3": 0.8444,
+    "MRR@3": 0.7972,
+    "Recall@20": 0.9567
+  },
+  "config_sha256": "2cb4002326186c1ed791f2ca0667958166e16314e2f749a68516916b9ae3411e"
+}

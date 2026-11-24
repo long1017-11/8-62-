@@ -1,0 +1,52 @@
+[
+  {
+    "task_id": "user_task_0",
+    "react": true,
+    "plan_then_execute": false
+  },
+  {
+    "task_id": "user_task_4",
+    "react": true,
+    "plan_then_execute": true
+  },
+  {
+    "task_id": "user_task_8",
+    "react": true,
+    "plan_then_execute": true
+  },
+  {
+    "task_id": "user_task_12",
+    "react": true,
+    "plan_then_execute": true
+  },
+  {
+    "task_id": "user_task_16",
+    "react": false,
+    "plan_then_execute": true
+  },
+  {
+    "task_id": "user_task_20",
+    "react": false,
+    "plan_then_execute": false
+  },
+  {
+    "task_id": "user_task_24",
+    "react": true,
+    "plan_then_execute": true
+  },
+  {
+    "task_id": "user_task_28",
+    "react": true,
+    "plan_then_execute": true
+  },
+  {
+    "task_id": "user_task_32",
+    "react": false,
+    "plan_then_execute": false
+  },
+  {
+    "task_id": "user_task_36",
+    "react": true,
+    "plan_then_execute": false
+  }
+]

@@ -1,0 +1,26 @@
+req_id,condition,prompt_tokens,output_tokens,ttft_s,tpot_s,e2e_s,finish_reason,status,text,target_plen,prefill_tps
+exp1_256_0,exp1_len_256,250,16,3.118953,0.073307,4.218558,length,ok,"Sir Walter Elliot, a man who found solace and fascination in the Baronet",256,80.15510333114992
+exp1_256_1,exp1_len_256,250,16,3.087293,0.067876,4.105438,length,ok,"Sir Walter Elliot, driven by vanity and a deep admiration for his own appearance and",256,80.97708899025781
+exp1_256_2,exp1_len_256,250,16,3.156764,0.068355,4.18209,length,ok,"Sir Walter prided himself on remaining single to protect his daughters, especially his eldest",256,79.19502376484273
+exp1_256_3,exp1_len_256,250,16,3.155168,0.06949,4.197514,length,ok,"At twenty-nine, Elizabeth Elliot remains as handsome and self-assured as she was",256,79.23508352011683
+exp1_256_4,exp1_len_256,250,16,2.998982,0.074934,4.122996,length,ok,"Elizabeth had hoped to marry William Walter Elliot, the heir presumptive, but his",256,83.36162070996092
+exp1_1024_0,exp1_len_1024,1018,16,7.487101,0.083891,8.745467,length,ok,"Sir Walter Elliot, a vain and self-absorbed baronet, finds sol",1024,135.96717875182932
+exp1_1024_1,exp1_len_1024,1018,16,5.257118,0.077088,6.413436,length,ok,"Sir Walter Elliot, driven by vanity and a desire to protect his daughters, remains",1024,193.6422199387573
+exp1_1024_2,exp1_len_1024,1018,16,5.253869,0.075184,6.381624,length,ok,"Sir Walter Elliot remains single for the sake of his daughters, particularly Elizabeth, who",1024,193.76196856069308
+exp1_1024_3,exp1_len_1024,1018,16,5.294516,0.076649,6.444247,length,ok,"Elizabeth, though still handsome and confident at twenty-nine, feels a growing sense of",1024,192.27442130687677
+exp1_1024_4,exp1_len_1024,1018,16,5.277924,0.077287,6.43723,length,ok,"Elizabeth Elliot harbors deep resentment toward William Walter Elliot, the heir to her family",1024,192.87886676655444
+exp1_2048_0,exp1_len_2048,2042,16,8.836606,0.083128,10.083521,length,ok,"Sir Walter Elliot, a vain and self-absorbed baronet, finds sol",2048,231.08419680587775
+exp1_2048_1,exp1_len_2048,2042,16,8.828253,0.082202,10.061289,length,ok,"Sir Walter Elliot, driven by vanity and a desire to protect his daughters, remains",2048,231.30284100376372
+exp1_2048_2,exp1_len_2048,2042,16,8.859169,0.083074,10.105278,length,ok,"Elizabeth Elliot, though still beautiful and capable, is deeply troubled by her father's",2048,230.4956593558606
+exp1_2048_3,exp1_len_2048,2042,16,8.771816,0.083741,10.027928,length,ok,"Elizabeth Elliot, once a youthful and handsome woman, now reflects on her aging,",2048,232.79102069628456
+exp1_2048_4,exp1_len_2048,2042,16,8.82478,0.082788,10.066595,length,ok,"Elizabeth Elliot, deeply wounded by the disgraceful marriage of her father's heir and",2048,231.393870442096
+exp1_4096_0,exp1_len_4096,4090,16,16.942563,0.096608,18.391688,length,ok,"Sir Walter Elliot, driven by vanity and a deep sense of family pride, remains",4096,241.40385371445868
+exp1_4096_1,exp1_len_4096,4090,16,16.943714,0.107091,18.550075,length,ok,"Sir Walter Elliot, driven by vanity and a deep sense of family pride, remains",4096,241.38745495822226
+exp1_4096_2,exp1_len_4096,4090,16,17.381817,0.097865,18.849794,length,ok,"Elizabeth Elliot, though handsome and capable, feels increasingly anxious and disillusioned by her",4096,235.30336327899434
+exp1_4096_3,exp1_len_4096,4090,16,16.964941,0.096731,18.415898,length,ok,"Elizabeth Elliot, now twenty-nine, remains handsome and self-assured despite the passage",4096,241.08542434659807
+exp1_4096_4,exp1_len_4096,4090,16,17.360234,0.124539,19.228323,length,ok,"Elizabeth Elliot, deeply wounded by the disgraceful marriage of her father's heir,",4096,235.59590268195697
+exp1_8192_0,exp1_len_8192,8186,16,39.209506,0.128013,41.129704,length,ok,"Sir Walter Elliot, driven by vanity and a deep sense of family pride, remains",8192,208.77590245589934
+exp1_8192_1,exp1_len_8192,8186,16,39.487993,0.13482,41.510292,length,ok,"Sir Walter Elliot, driven by vanity and pride, remains single to protect his daughters",8192,207.30352135141433
+exp1_8192_2,exp1_len_8192,8186,16,39.248247,0.127518,41.161014,length,ok,"The text describes how Sir Walter Elliot, despite his wealth and status, is increasingly",8192,208.56982478733383
+exp1_8192_3,exp1_len_8192,8186,16,39.113016,0.133588,41.116831,length,ok,"Elizabeth Elliot, now twenty-nine, remains handsome and self-assured despite the passage",8192,209.29094294339254
+exp1_8192_4,exp1_len_8192,8186,16,39.284857,0.127523,41.197697,length,ok,"Elizabeth Elliot is deeply wounded by the failure of her father's heir, William Walter",8192,208.3754562222283

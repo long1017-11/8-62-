@@ -1,0 +1,18 @@
+experiment: lr0_best
+seed: 0
+split:
+  seed: 0
+  path: data/split.json
+  manifest_path: data/manifest.json
+model:
+  n_layers: 3
+  hidden: 284
+  dropout: 0.1498653519626455
+train:
+  lr: 0.018964731597966758
+  weight_decay: 7.011073625545466e-06
+  batch_size: 128
+  epochs: 30
+runtime:
+  device: cpu
+  num_threads: 1

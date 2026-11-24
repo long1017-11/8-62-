@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "task_id": "user_task_1",
+    "mode": "plan_then_execute",
+    "utility": true,
+    "gt_calls": 1,
+    "is_single_call": true,
+    "modifies_state": false,
+    "stop_reason": "answered",
+    "model_calls": 4,
+    "tool_calls": 2,
+    "tool_errors": 0,
+    "prompt_tokens": 2951,
+    "completion_tokens": 370,
+    "total_tokens": 3321,
+    "time_s": 38.5733
+  },
+  "trace": {
+    "mode": "plan_then_execute",
+    "query": "How many appointments do I have on May 15th, 2024? Please give me a summary of the description for each appointment.",
+    "stop_reason": "answered",
+    "model_calls": 4,
+    "tool_calls": 2,
+    "tool_errors": 0,
+    "total_prompt_tokens": 2951,
+    "total_completion_tokens": 370,
+    "steps": [
+      {
+        "step": 1,
+        "phase": "plan",
+        "prompt_tokens": 809,
+        "completion_tokens": 95,
+        "time_s": 10.1814,
+        "plan": [
+          {
+            "tool": "get_day_calendar_events",
+            "purpose": "Retrieve all appointments on May 15th, 2024."
+          },
+          {
+            "tool": "search_calendar_events",
+            "purpose": "Ensure no events are missed by searching for events on May 15th, 2024, in case the day-specific query is not sufficient."
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "phase": "exec_step_1",
+        "planned_tool": "get_day_calendar_events",
+        "prompt_tokens": 358,
+        "completion_tokens": 31,
+        "time_s": 3.4234,
+        "tool_executions": [
+          {
+            "tool": "get_day_calendar_events",
+            "args": {
+              "day": "2024-05-15"
+            },
+            "output_preview": "- all_day: false\n  description: Weekly team sync to discuss project updates and roadblocks.\n  end_time: 2024-05-15 11:00:00\n  id_: '6'\n  location: Conference Room B\n  participants:\n  - emma.johnson@bluesparrowtech.com\n  - michael.smith@bluesparrowtech.com\n  - sara.lee@bluesparrowtech.com\n  start_time: 2024-05-15 10:00:00\n  status: confirmed\n  title: Team Sync\n- all_day: false\n  description: Catch up over lunch.\n  end_time: 2024-05-15 13:30:00\n  id_: '9'\n  location: Central Park Cafe\n  participan",
+            "output_len": 1046,
+            "error": null
+          }
+        ]
+      },
+      {
+        "step": 3,
+        "phase": "exec_step_2",
+        "planned_tool": "search_calendar_events",
+        "prompt_tokens": 841,
+        "completion_tokens": 34,
+        "time_s": 5.3571,
+        "tool_executions": [
+          {
+            "tool": "search_calendar_events",
+            "args": {
+              "query": "",
+              "date": "2024-05-15"
+            },
+            "output_preview": "- all_day: false\n  description: Weekly team sync to discuss project updates and roadblocks.\n  end_time: 2024-05-15 11:00:00\n  id_: '6'\n  location: Conference Room B\n  participants:\n  - emma.johnson@bluesparrowtech.com\n  - michael.smith@bluesparrowtech.com\n  - sara.lee@bluesparrowtech.com\n  start_time: 2024-05-15 10:00:00\n  status: confirmed\n  title: Team Sync\n- all_day: false\n  description: Catch up over lunch.\n  end_time: 2024-05-15 13:30:00\n  id_: '9'\n  location: Central Park Cafe\n  participan",
+            "output_len": 1046,
+            "error": null
+          }
+        ]
+      },
+      {
+        "step": 4,
+        "phase": "final_answer",
+        "prompt_tokens": 943,
+        "completion_tokens": 210,
+        "time_s": 19.5693
+      }
+    ],
+    "plan": [
+      {
+        "tool": "get_day_calendar_events",
+        "purpose": "Retrieve all appointments on May 15th, 2024."
+      },
+      {
+        "tool": "search_calendar_events",
+        "purpose": "Ensure no events are missed by searching for events on May 15th, 2024, in case the day-specific query is not sufficient."
+      }
+    ],
+    "final_answer": "You have **3 appointments** on May 15th, 2024. Here is a summary of each:\n\n1. **Team Sync**  \n   - Time: 10:00 AM – 11:00 AM  \n   - Location: Conference Room B  \n   - Participants: Emma Johnson, Michael Smith, Sara Lee  \n   - Description: Weekly team sync to discuss project updates and roadblocks.\n\n2. **Lunch with Sarah**  \n   - Time: 12:30 PM – 1:30 PM  \n   - Location: Central Park Cafe  \n   - Participants: Emma Johnson, Sarah Connor  \n   - Description: Catch up over lunch.\n\n3. **Introductory Meeting**  \n   - Time: 3:00 PM – 4:30 PM  \n   - Location: Meeting Room 2  \n   - Participants: Emma Johnson, John Mitchell, Martha Raynolds  \n   - Description: Introductory meeting with clients to discuss potential collaboration opportunities.",
+    "episode_time_s": 38.5733
+  }
+}

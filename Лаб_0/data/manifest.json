@@ -1,0 +1,72 @@
+{
+  "class_counts": {
+    "test": [
+      36,
+      36,
+      35,
+      37,
+      36,
+      37,
+      36,
+      36,
+      35,
+      36
+    ],
+    "train": [
+      107,
+      109,
+      106,
+      109,
+      109,
+      109,
+      109,
+      107,
+      104,
+      108
+    ],
+    "val": [
+      35,
+      37,
+      36,
+      37,
+      36,
+      36,
+      36,
+      36,
+      35,
+      36
+    ]
+  },
+  "classes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "dataset": "sklearn.datasets.load_digits",
+  "n_features": 64,
+  "n_samples_total": 1797,
+  "sizes": {
+    "test": 360,
+    "train": 1077,
+    "val": 360
+  },
+  "source": {
+    "library": "scikit-learn",
+    "version": "1.9.1"
+  },
+  "split_file": "data/split.json",
+  "split_rule": {
+    "split_seed": 0,
+    "stratify": true,
+    "test_size": 0.2,
+    "val_size_of_rest": 0.25
+  },
+  "split_sha256": "ca868a5a2938838116882b43b3dff5d1c0ee29a3b2db79b77f9f741e7da1bc7c"
+}

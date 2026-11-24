@@ -1,0 +1,16 @@
+﻿*.gguf
+*.bin
+*.safetensors
+*.pt
+*.pth
+*.npy
+*.tar.gz
+llama/
+venv/
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+mlruns/
+*.db
+*.sqlite
