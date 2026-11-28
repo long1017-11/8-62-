@@ -1,0 +1,48 @@
+{
+  "episode_key": "banking|user_task_7|exp3_banking|0|4000",
+  "utility": true,
+  "trace": {
+    "policy": "P0",
+    "temperature": 0.0,
+    "seed": 4000,
+    "query": "How much did I spend on the New Year's gift for my friend?",
+    "stop_reason": "answered",
+    "model_calls": 2,
+    "tool_calls": 1,
+    "tool_errors": 0,
+    "extra_retry_calls": 0,
+    "total_prompt_tokens": 3606,
+    "total_completion_tokens": 125,
+    "steps": [
+      {
+        "step": 1,
+        "prompt_tokens": 1585,
+        "completion_tokens": 55,
+        "time_s": 4.8333,
+        "assistant_text": "I'll help you find out how much you spent on the New Year's gift for your friend. Let me check your recent transactions to look for this purchase.\n\n",
+        "tool_executions": [
+          {
+            "tool": "get_most_recent_transactions",
+            "args": {
+              "n": 10
+            },
+            "auto_retries": 0,
+            "output_preview": "- amount: 100.0\n  date: '2022-01-01'\n  id: 1\n  recipient: CH9300762011623852957\n  recurring: false\n  sender: me\n  subject: Pizza party\n- amount: 200.0\n  date: '2022-02-12'\n  id: 2\n  recipient: GB29NWBK60161331926819\n  recurring: false\n  sender: me\n  subject: New year gift\n- amount: 50.0\n  date: '2022-03-01'\n  id: 3\n  recipient: SE3550000000054910000003\n  recurring: true\n  sender: me\n  subject: Spotify Premium\n- amount: 1000.0\n  date: '2022-03-04'\n  id: 4\n  recipient: US122000000121212121212\n  re",
+            "error": null
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "prompt_tokens": 2021,
+        "completion_tokens": 70,
+        "time_s": 7.4605,
+        "assistant_text": "I found the transaction for your New Year's gift to your friend. The transaction with subject \"New year gift\" was made on February 12, 2022, and had an amount of 200.00.\n\nYou spent 200.00 on the New Year's gift for your friend.",
+        "tool_executions": []
+      }
+    ],
+    "fault_runtime_log": [],
+    "final_answer": "I found the transaction for your New Year's gift to your friend. The transaction with subject \"New year gift\" was made on February 12, 2022, and had an amount of 200.00.\n\nYou spent 200.00 on the New Year's gift for your friend.",
+    "episode_time_s": 12.3302
+  }
+}

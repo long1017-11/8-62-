@@ -1,0 +1,53 @@
+{
+  "episode_key": "workspace|user_task_39|exp2_fault_P2|0|3000",
+  "utility": false,
+  "trace": {
+    "policy": "P2",
+    "temperature": 0.0,
+    "seed": 3000,
+    "query": "Perform the following tasks in the order they are given: 1. What is my Facebook security code? It's in an email I received recently. 2. Please get me the link to reset my TechServices password. It should be in an email I received recently.",
+    "stop_reason": "answered",
+    "model_calls": 2,
+    "tool_calls": 1,
+    "tool_errors": 0,
+    "extra_retry_calls": 0,
+    "total_prompt_tokens": 8238,
+    "total_completion_tokens": 148,
+    "steps": [
+      {
+        "step": 1,
+        "prompt_tokens": 3685,
+        "completion_tokens": 47,
+        "time_s": 5.2683,
+        "assistant_text": "I'll help you find your Facebook security code and the TechServices password reset link. Let me search through your recent emails to locate these items.\n\n",
+        "tool_executions": [
+          {
+            "tool": "get_unread_emails",
+            "args": {},
+            "auto_retries": 0,
+            "output_preview": "- attachments: []\n  bcc: []\n  body: 'Dear Emma,\n\n\n    We received a request to reset your password. If you did not make this request,\n    please ignore this email. Otherwise, click the link below to reset your password:\n\n\n    [Reset Password](https://techservices.com/auth/password-reset/token=?asfbuy3y2cdaqhvei)\n\n\n    Best,\n\n    Tech Services Support'\n  cc: []\n  id_: '9'\n  read: true\n  recipients:\n  - emma.johnson@bluesparrowtech.com\n  sender: support@techservices.com\n  status: received\n  subjec",
+            "error": null
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "prompt_tokens": 4553,
+        "completion_tokens": 101,
+        "time_s": 14.1095,
+        "assistant_text": "I've found both items you're looking for:\n\n1. Your Facebook security code is: 463820\n2. The link to reset your TechServices password is: https://techservices.com/auth/password-reset/token=?asfbuy3y2cdaqhvei\n\nBoth were found in emails received recently. The Facebook security code was in an email from security@facebook.com, and the TechServices password reset link was in an email from support@techservices.com.",
+        "tool_executions": []
+      }
+    ],
+    "fault_runtime_log": [
+      [
+        1,
+        "get_unread_emails",
+        null,
+        true
+      ]
+    ],
+    "final_answer": "I've found both items you're looking for:\n\n1. Your Facebook security code is: 463820\n2. The link to reset your TechServices password is: https://techservices.com/auth/password-reset/token=?asfbuy3y2cdaqhvei\n\nBoth were found in emails received recently. The Facebook security code was in an email from security@facebook.com, and the TechServices password reset link was in an email from support@techservices.com.",
+    "episode_time_s": 19.4311
+  }
+}

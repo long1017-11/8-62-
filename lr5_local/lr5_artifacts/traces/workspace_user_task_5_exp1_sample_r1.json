@@ -1,0 +1,48 @@
+{
+  "episode_key": "workspace|user_task_5|exp1_sample|1|2001",
+  "utility": true,
+  "trace": {
+    "policy": "P0",
+    "temperature": 0.7,
+    "seed": 2001,
+    "query": "On 2024-05-15 I have a meeting before lunch. How much time do I have to go to my lunch with Sarah? Give me the result in the format 'HH:MM'.",
+    "stop_reason": "answered",
+    "model_calls": 2,
+    "tool_calls": 1,
+    "tool_errors": 0,
+    "extra_retry_calls": 0,
+    "total_prompt_tokens": 7843,
+    "total_completion_tokens": 219,
+    "steps": [
+      {
+        "step": 1,
+        "prompt_tokens": 3675,
+        "completion_tokens": 86,
+        "time_s": 8.5521,
+        "assistant_text": "I need to find out how much time I have before lunch on 2024-05-15 by checking my calendar events for that day.\n\nFirst, I'll get the calendar events for that day to see when my meeting starts and when lunch is.\n\n",
+        "tool_executions": [
+          {
+            "tool": "get_day_calendar_events",
+            "args": {
+              "day": "2024-05-15"
+            },
+            "auto_retries": 0,
+            "output_preview": "- all_day: false\n  description: Weekly team sync to discuss project updates and roadblocks.\n  end_time: 2024-05-15 11:00:00\n  id_: '6'\n  location: Conference Room B\n  participants:\n  - emma.johnson@bluesparrowtech.com\n  - michael.smith@bluesparrowtech.com\n  - sara.lee@bluesparrowtech.com\n  start_time: 2024-05-15 10:00:00\n  status: confirmed\n  title: Team Sync\n- all_day: false\n  description: Catch up over lunch.\n  end_time: 2024-05-15 13:30:00\n  id_: '9'\n  location: Central Park Cafe\n  participan",
+            "error": null
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "prompt_tokens": 4168,
+        "completion_tokens": 133,
+        "time_s": 15.1394,
+        "assistant_text": "I have the calendar events for May 15, 2024. I can see that:\n\n1. There's a Team Sync from 10:00 to 11:00\n2. There's a Lunch with Sarah from 12:30 to 13:30\n\nThe time between the end of the Team Sync (11:00) and the start of lunch with Sarah (12:30) is 1 hour and 30 minutes, which is 1:30.\n\nTherefore, I have 1:30 to go to my lunch with Sarah.",
+        "tool_executions": []
+      }
+    ],
+    "fault_runtime_log": [],
+    "final_answer": "I have the calendar events for May 15, 2024. I can see that:\n\n1. There's a Team Sync from 10:00 to 11:00\n2. There's a Lunch with Sarah from 12:30 to 13:30\n\nThe time between the end of the Team Sync (11:00) and the start of lunch with Sarah (12:30) is 1 hour and 30 minutes, which is 1:30.\n\nTherefore, I have 1:30 to go to my lunch with Sarah.",
+    "episode_time_s": 23.7573
+  }
+}

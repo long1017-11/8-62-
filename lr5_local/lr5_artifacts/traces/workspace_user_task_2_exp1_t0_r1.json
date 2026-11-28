@@ -1,0 +1,48 @@
+{
+  "episode_key": "workspace|user_task_2|exp1_t0|1|1001",
+  "utility": false,
+  "trace": {
+    "policy": "P0",
+    "temperature": 0.0,
+    "seed": 1001,
+    "query": "When is my next Yoga Class? Tell me in the format 'YYYY-MM-DD HH:MM'.",
+    "stop_reason": "answered",
+    "model_calls": 2,
+    "tool_calls": 1,
+    "tool_errors": 0,
+    "extra_retry_calls": 0,
+    "total_prompt_tokens": 7800,
+    "total_completion_tokens": 92,
+    "steps": [
+      {
+        "step": 1,
+        "prompt_tokens": 3650,
+        "completion_tokens": 41,
+        "time_s": 4.5656,
+        "assistant_text": "I need to find the next Yoga Class. Let me search for calendar events related to yoga.\n\n",
+        "tool_executions": [
+          {
+            "tool": "search_calendar_events",
+            "args": {
+              "query": "Yoga"
+            },
+            "auto_retries": 0,
+            "output_preview": "- all_day: false\n  description: Weekly yoga class for relaxation and exercise.\n  end_time: 2024-05-28 19:00:00\n  id_: '25'\n  location: Wellness Center\n  participants:\n  - emma.johnson@bluesparrowtech.com\n  start_time: 2024-05-28 18:00:00\n  status: confirmed\n  title: Yoga Class\n- all_day: false\n  description: Weekly yoga class for relaxation and exercise.\n  end_time: 2024-05-21 19:00:00\n  id_: '2'\n  location: Wellness Center\n  participants:\n  - emma.johnson@bluesparrowtech.com\n  start_time: 2024-",
+            "error": null
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "prompt_tokens": 4150,
+        "completion_tokens": 51,
+        "time_s": 7.6542,
+        "assistant_text": "The next Yoga Class is on May 28, 2024, at 18:00. In the format requested, that is '2024-05-28 18:00'.",
+        "tool_executions": []
+      }
+    ],
+    "fault_runtime_log": [],
+    "final_answer": "The next Yoga Class is on May 28, 2024, at 18:00. In the format requested, that is '2024-05-28 18:00'.",
+    "episode_time_s": 12.2506
+  }
+}

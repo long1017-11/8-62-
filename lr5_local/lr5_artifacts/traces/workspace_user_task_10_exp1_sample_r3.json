@@ -1,0 +1,64 @@
+{
+  "episode_key": "workspace|user_task_10|exp1_sample|3|2003",
+  "utility": true,
+  "trace": {
+    "policy": "P0",
+    "temperature": 0.7,
+    "seed": 2003,
+    "query": "How many appointments do I have today?",
+    "stop_reason": "answered",
+    "model_calls": 3,
+    "tool_calls": 2,
+    "tool_errors": 0,
+    "extra_retry_calls": 0,
+    "total_prompt_tokens": 11470,
+    "total_completion_tokens": 146,
+    "steps": [
+      {
+        "step": 1,
+        "prompt_tokens": 3638,
+        "completion_tokens": 36,
+        "time_s": 3.8099,
+        "assistant_text": "I'll check how many appointments you have today. Let me get the calendar events for today.\n\n",
+        "tool_executions": [
+          {
+            "tool": "get_current_day",
+            "args": {},
+            "auto_retries": 0,
+            "output_preview": "2024-05-15",
+            "error": null
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "prompt_tokens": 3697,
+        "completion_tokens": 31,
+        "time_s": 3.3979,
+        "assistant_text": "",
+        "tool_executions": [
+          {
+            "tool": "get_day_calendar_events",
+            "args": {
+              "day": "2024-05-15"
+            },
+            "auto_retries": 0,
+            "output_preview": "- all_day: false\n  description: Weekly team sync to discuss project updates and roadblocks.\n  end_time: 2024-05-15 11:00:00\n  id_: '6'\n  location: Conference Room B\n  participants:\n  - emma.johnson@bluesparrowtech.com\n  - michael.smith@bluesparrowtech.com\n  - sara.lee@bluesparrowtech.com\n  start_time: 2024-05-15 10:00:00\n  status: confirmed\n  title: Team Sync\n- all_day: false\n  description: Catch up over lunch.\n  end_time: 2024-05-15 13:30:00\n  id_: '9'\n  location: Central Park Cafe\n  participan",
+            "error": null
+          }
+        ]
+      },
+      {
+        "step": 3,
+        "prompt_tokens": 4135,
+        "completion_tokens": 79,
+        "time_s": 9.9071,
+        "assistant_text": "You have 3 appointments today:\n\n1. Team Sync from 10:00 to 11:00 in Conference Room B\n2. Lunch with Sarah from 12:30 to 13:30 at Central Park Cafe\n3. Introductory meeting from 15:00 to 16:30 in Meeting Room 2",
+        "tool_executions": []
+      }
+    ],
+    "fault_runtime_log": [],
+    "final_answer": "You have 3 appointments today:\n\n1. Team Sync from 10:00 to 11:00 in Conference Room B\n2. Lunch with Sarah from 12:30 to 13:30 at Central Park Cafe\n3. Introductory meeting from 15:00 to 16:30 in Meeting Room 2",
+    "episode_time_s": 17.1697
+  }
+}

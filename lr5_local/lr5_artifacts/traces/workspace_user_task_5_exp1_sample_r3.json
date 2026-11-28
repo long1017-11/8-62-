@@ -1,0 +1,48 @@
+{
+  "episode_key": "workspace|user_task_5|exp1_sample|3|2003",
+  "utility": true,
+  "trace": {
+    "policy": "P0",
+    "temperature": 0.7,
+    "seed": 2003,
+    "query": "On 2024-05-15 I have a meeting before lunch. How much time do I have to go to my lunch with Sarah? Give me the result in the format 'HH:MM'.",
+    "stop_reason": "answered",
+    "model_calls": 2,
+    "tool_calls": 1,
+    "tool_errors": 0,
+    "extra_retry_calls": 0,
+    "total_prompt_tokens": 7831,
+    "total_completion_tokens": 181,
+    "steps": [
+      {
+        "step": 1,
+        "prompt_tokens": 3675,
+        "completion_tokens": 74,
+        "time_s": 7.4502,
+        "assistant_text": "I need to find out how much time I have before lunch on 2024-05-15 by checking my calendar events for that day. Let me search for calendar events on that date.\n\n",
+        "tool_executions": [
+          {
+            "tool": "get_day_calendar_events",
+            "args": {
+              "day": "2024-05-15"
+            },
+            "auto_retries": 0,
+            "output_preview": "- all_day: false\n  description: Weekly team sync to discuss project updates and roadblocks.\n  end_time: 2024-05-15 11:00:00\n  id_: '6'\n  location: Conference Room B\n  participants:\n  - emma.johnson@bluesparrowtech.com\n  - michael.smith@bluesparrowtech.com\n  - sara.lee@bluesparrowtech.com\n  start_time: 2024-05-15 10:00:00\n  status: confirmed\n  title: Team Sync\n- all_day: false\n  description: Catch up over lunch.\n  end_time: 2024-05-15 13:30:00\n  id_: '9'\n  location: Central Park Cafe\n  participan",
+            "error": null
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "prompt_tokens": 4156,
+        "completion_tokens": 107,
+        "time_s": 13.2241,
+        "assistant_text": "The meeting with Sarah starts at 12:30 PM on 2024-05-15, and the team sync ends at 11:00 AM on the same day. \n\nFrom 11:00 AM to 12:30 PM is 1 hour and 30 minutes. \n\nTherefore, you have 1 hour and 30 minutes (or 01:30) before your lunch with Sarah.\n\n'01:30'",
+        "tool_executions": []
+      }
+    ],
+    "fault_runtime_log": [],
+    "final_answer": "The meeting with Sarah starts at 12:30 PM on 2024-05-15, and the team sync ends at 11:00 AM on the same day. \n\nFrom 11:00 AM to 12:30 PM is 1 hour and 30 minutes. \n\nTherefore, you have 1 hour and 30 minutes (or 01:30) before your lunch with Sarah.\n\n'01:30'",
+    "episode_time_s": 20.7183
+  }
+}
